@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-size: 24px;
+            background-color: #a7a7a8;
+        }
+
+        #picture {
+            float: left;
+            text-align: center;
+            background-image: linear-gradient(blue, black);
+            border: 5px solid;
+            height: fit-content;
+            font-style: bold;
+            color: white;
+            border-color: black;
+        }
+
+        #info {
+            float: left;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            border: 5px solid black;
+            padding: 20px;
+            background-image: linear-gradient(blue, black);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="picture">
+        <%= name %>
+            <br>
+
+
+                <br>
+
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/<%= id %>.png"
+                    alt="">
+
+                <br>
+                <p>
+            </p>
+    </div>
+
+    <div id="info">
+        <h3>Stats</h3>
+        <br>
+        Pokemon ID: <%= id%>
+        <br>
+        Type: <%= typeList[0] %> <%= typeList[1] %>
+        <br>
+        <br>
+        
+        HP: <%= hp %> / 255
+        <progress value="<%= hp %>" max="255">
+            <%= hp %>
+        </progress>
+        Attack: <%= attack %> / 255
+        <progress value="<%= attack %>" max="255">
+            <%= hp %>
+        </progress>
+        Defense: <%= defense %> / 255
+        <progress value="<%= defense %>" max="255">
+            <%= hp %>
+        </progress>
+        Special Attack: <%= specialAttack %> / 255
+        <progress value="<%= specialAttack %>" max="255">
+            <%= hp %>
+        </progress>
+        Special Defense: <%= specialDefense %> / 255
+        <progress value="<%= specialDefense %>" max="255">
+            <%= hp %>
+        </progress>
+        Speed: <%= speed %> / 255
+        <progress value="<%= speed %>" max="255">
+            <%= hp %>
+        </progress>
+    </div>
+
+    <button id="addToCart">Add to Shopping Cart</button>
+
+</body>
+
+</html>

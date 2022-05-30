@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Pokemon</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./search.css">
+
+
+    <script src="./search.js"> </script>
+</head>
+
+<body>
+    <br>
+    <div class="search_poke">
+        <select name="pokemon_type" id="pokemon_type">
+            <option value="grass"> Grass </option>
+            <option value="fire"> Fire </option>
+            <option value="water"> Water </option>
+            <option value="electric"> Electric </option>
+            <option value="fairy"> Fairy </option>
+            <option value="rock"> Rock </option>
+            <option value="dark"> Dark </option>
+            <option value="dragon"> Dragon </option>
+        </select>
+
+        <input type="text" id="searchByNameOrID">
+        <button id="search">Search</button>
+    </div>
+    <br>
+
+    <div id="history">
+         <h3>History</h3> 
+         <p id="history_p"> </p> 
+    
+    </div>
+
+    <br>
+    <div id="results"></div>
+    <main>
+
+    </main>
+
+</body>
+
+</html>
